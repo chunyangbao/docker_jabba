@@ -41,8 +41,8 @@ RUN Rscript -e "BiocManager::install('GenomicRanges')" && \
     Rscript -e "devtools::install_github('mskilab/bamUtils')" && \
     Rscript -e "devtools::install_github('mskilab/gGnome')" && \
     Rscript -e "devtools::install_github('mskilab/Ppurple')" && \
-    Rscript -e "devtools::install_github('mskilab/JaBbA')" && \
-    git clone https://github.com/mskilab/JaBbA.git && \
+    Rscript -e "devtools::install_github('chunyangbao/JaBbA')" && \
+    git clone https://github.com/chunyangbao/JaBbA.git && \
     rm -rf /var/lib/apt/lists/*
 
 ENV PATH $PATH:/jabba/JaBbA
